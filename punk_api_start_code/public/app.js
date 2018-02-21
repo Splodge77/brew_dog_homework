@@ -30,13 +30,13 @@ const populateList = function(beers){
   beers.forEach(function(beer){
     const dt = document.createElement('dl');
     dt.innerText = beer.name;
-    const dd = document.createElement('dl')
     const image = document.createElement('img')
     image.src = beer.image_url;
+    image.width = '50';
+    image.height = '150';
     // dd.innerText = beer.image_url;
     console.log(beer);
     dl.appendChild(dt);
-    dl.appendChild(dd);
     dl.appendChild(image);
   });
 };
