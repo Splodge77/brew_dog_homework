@@ -26,14 +26,25 @@ const requestComplete = function(){
 // }
 
 const populateList = function(beers){
-  const ul = document.getElementById("beer-list");
-  console.log(ul);
+  const dl = document.getElementById("beer-list");
   beers.forEach(function(beer){
-    const li = document.createElement('li');
-    li.innerText = beer.name;
-    ul.appendChild(li);
+    const dt = document.createElement('dl');
+    dt.innerText = beer.name;
+    const dd = document.createElement('dl')
+    const image = document.createElement('img')
+    image.src = beer.image_url;
+    // dd.innerText = beer.image_url;
+    console.log(beer);
+    dl.appendChild(dt);
+    dl.appendChild(dd);
+    dl.appendChild(image);
   });
 };
+
+// const createImg = function(url){
+//   const img = document.createElement('img');
+//   img.src = url;
+// }
 
 // const setPtags = function(beers, index){
 //   const pTag1 = document.querySelector('#country-select-result');
