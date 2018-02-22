@@ -32,6 +32,8 @@ const setPtags = function(beers, index){
   pTag2.innerText = beers[index].tagline;
   const pTag3 = document.querySelector('#description-select-result');
   pTag3.innerText = beers[index].description;
+  const pTag4 = document.querySelector('#ingredients-select-result');
+  pTag4.innerText = beers[index].ingredients.malt.name;
 };
 
 const populateDropdown = function(beers){
