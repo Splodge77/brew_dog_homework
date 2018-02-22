@@ -54,8 +54,8 @@ const populateList = function(beers){
     dt.innerText = beer.name;
     const image = document.createElement('img')
     image.src = beer.image_url;
-    image.width = '50';
-    image.height = '170';
+    image.width = '80';
+    image.height = '240';
     dl.appendChild(dt);
     dl.appendChild(image);
   });
